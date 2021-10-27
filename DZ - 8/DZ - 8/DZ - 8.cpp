@@ -2,6 +2,8 @@
 #include <random>
 #include <stdlib.h>
 #include <chrono>
+#include<string>
+#include<fstream>
 
 using namespace std;
 
@@ -283,32 +285,70 @@ Coord __fastcall getAICoord( Game& g)
 
 void __fastcall congrats(const Game& g)
 {  
-    if (g.progress == WON_HUMAN)     
-        cout << "Humanity defeated machines!" << endl;
+    if (g.progress == WON_HUMAN)
+     cout << "Humanity defeated machines!" << endl;      
+    
     else if (g.progress == WON_AI)
-        cout << "Humanity has been defeated" << endl;
+    cout << "Humanity has been defeated" << endl;       
+    
     else if (g.progress == DRAW)
-        cout << "Oh,have again a DRAW" << endl;
+    cout << "Oh,have again a DRAW" << endl;
 
 }
 
 void _fastcall score(Game& g)
-{
-    string b;
-    int s = 50;
+{   
+    int s = 100;
+    int l = 50;
     if (g.progress == WON_HUMAN)
-    {
-        cout << "Your score:" << g.turn * s << endl;
-        cout << "Please enter your nick_name" << endl;
-        cin >> b;
-        cout << "Good game " << b << endl;
-    }
-    else if (g.progress== WON_AI)   
     cout << "Your score:" << g.turn * s << endl;
+       
+    else if (g.progress== WON_AI)   
+    cout << "Your score:" << g.turn * l << endl;
     
     else if (g.progress== DRAW)
     cout << "Your don't have points" << endl;
  
+}
+
+void __fastcall WriteNickName(Game& g)
+{
+    setlocale(LC_ALL, "ru");
+    string ld = "Leaderboard.txt";
+    fstream fs;
+    fs.open(ld, fstream::in | fstream::out |fstream::app);
+    if (!fs.is_open())
+    {
+        cout << "Ошибка открытия файла" << endl;
+    }
+    else
+    {
+        string mg;
+        int val;
+        cout << "Файл открыт" << endl;
+        cout << "Нажмите 1 для записи никнейма в таблицу" << endl;
+        cout << "Нажмите 2 для простра таблицы лидеров" << endl;
+        cin >> val;
+
+        if (val==1)
+        {
+            cout << "Введите ваш никнейм" << endl;
+            cin >> mg;
+            fs << mg << endl;
+        }
+        if (val==2)
+        {
+            cout << "Показана таблица лидеров" << endl;
+
+            while (!fs.eof())
+            {              
+                mg = "";
+                fs >> mg;
+                cout << mg << endl;
+            }
+        }
+    }
+    fs.close();
 }
 
 int main()
@@ -343,6 +383,7 @@ int main()
         } while (g.progress == In_PROGRESS);
         congrats(g);
         score(g);
+        WriteNickName(g);
         deinitGame(g);
 
         cout << "You want play again - y/n ?" << endl;
@@ -352,3 +393,7 @@ int main()
                           
     return 0;
 }
+/* вообще я еще думал сделать сложность, ну алгоритм который писали на вебинаре разделить на 2 части,
+* легкий и сложный,но потом подумал,а какой смысл от этого?
+* Но если что вот еще была такая идея) 
+*/
