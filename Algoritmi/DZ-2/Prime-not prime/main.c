@@ -22,8 +22,8 @@ int main()
 
     printf("A number is :" "%d\n", isPrime(n));
 
-    // 1 - простое
-    // 0 - не простое
+    // 1 - prime
+    // 0 - not prime
 
     return 0;
 }
