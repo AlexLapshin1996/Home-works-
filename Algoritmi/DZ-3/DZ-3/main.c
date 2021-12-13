@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include<stdbool.h>
 
+#define size_x  8
+#define size_y  8
+
 // task 1.
 int perevod(int chislo)
 {
@@ -59,14 +62,14 @@ int power_x2 (int x,int y)
 
 //task 4.
 
-int routes(int x,int y)
+int routes(int doska[size_x][size_y],int x,int y)
 {
-    if (x==0 && y ==0)
+    if (x==0 && y ==0 || doska[x][y] ==1)
         return 0;
         else if (x ==0 || y ==0)
             return 1;
         else
-        return routes(x,y-1)+routes(x-1,y);
+        return routes(doska,x,y-1)+routes(doska,x-1,y);
 }
 
 int main()
@@ -100,14 +103,17 @@ int main()
 
     printf("a^b =%d\n", power_x2(osn,step));
 
-    const int sizeX = 8;
-    const int sizeY = 8;
+    int doska[size_x][size_y];
 
-    for (int y = 0;y<sizeY;y++)
+    doska[1][1] = 1;
+    doska[4][3] = 1;
+    doska[5][7] = 1;
+
+    for (int y = 0;y<size_y;y++)
     {
-        for (int x=0;x<sizeX;x++)
+        for (int x=0;x<size_x;x++)
         {
-            printf("%5d", routes(x,y));
+            printf("%5d", routes(doska,x,y));
         }
         printf("\n");
     }
