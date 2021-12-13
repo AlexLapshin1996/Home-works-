@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1639321676 source:c:\users\alex\desktop\home-works-\algoritmi\dz-2\dz-3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1639329835 source:c:\users\alex\desktop\home-works-\algoritmi\dz-3\dz-3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
