@@ -92,6 +92,41 @@ void bucketSort(int *arr, int size )
     }
 }
 
+void bucketSort_evo(int* arr, int size)
+{
+    const int max = size;
+    const int b = 12;
+    int bucket[b + 1][max + 1]; 
+    for (int i = 0; i < b+1; i++)
+    {
+        bucket[i][max] = 0;
+    }
+
+    for (int digit = 1; digit < 10000000; digit*=10)
+    {
+        for (int j = 0; j < max; j++)
+        {
+            if (arr[j]%2==0)
+            {
+                int d = (arr[j] / digit) % b;
+                bucket[d][bucket[d][max]++] = arr[j];
+                bucket[b][bucket[b][max]++] = j;
+            }
+        }
+        int idx = 0;
+        for (int i = 0; i < b; i++)
+        {
+            for (int j = 0; j < bucket[i][max]; j++)
+            {
+                arr[bucket[b][idx++]] = bucket[i][j];
+            }
+            bucket[i][max] = 0;
+        }
+        bucket[b][max] = 0;
+    }
+
+}
+
 
 int main()
 {
@@ -119,9 +154,11 @@ int main()
     pritnArr(arr_2, size_2);
     cout << endl;
     
-    cout << "Массив после блочной сортировки :" << endl;
-    bucketSort(arr_2,size_2);
+    cout << "Массив после блочной сортировки (чёт-нечет):" << endl;
+    bucketSort_evo(arr_2, size_2);
     pritnArr(arr_2, size_2);
+
+    
 }
 
 
