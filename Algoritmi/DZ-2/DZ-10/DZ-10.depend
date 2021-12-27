@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1640454556 source:c:\users\alex\desktop\home-works-\algoritmi\dz-2\dz-10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
