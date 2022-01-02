@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="DZ-10.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="geek.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

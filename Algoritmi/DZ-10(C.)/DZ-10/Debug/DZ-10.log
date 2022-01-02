@@ -1,2 +1,6 @@
 ﻿  DZ-10.cpp
-  DZ-10.vcxproj -> C:\Users\Alex\source\repos\DZ-10\Debug\DZ-10.exe
+C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\DZ-10\DZ-10.cpp(53): warning C4715: bracesCheck: значение возвращается не при всех путях выполнения
+DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl initOneLinkList(struct OneLinkList *)" (?initOneLinkList@@YAXPAUOneLinkList@@@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
+DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl pushOneLinkStack(struct OneLinkList *,char)" (?pushOneLinkStack@@YAHPAUOneLinkList@@D@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
+DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "char __cdecl popOneLinkStack(struct OneLinkList *)" (?popOneLinkStack@@YADPAUOneLinkList@@@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
+C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\Debug\DZ-10.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
