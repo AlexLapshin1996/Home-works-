@@ -1,6 +1,4 @@
-﻿  DZ-10.cpp
-C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\DZ-10\DZ-10.cpp(53): warning C4715: bracesCheck: значение возвращается не при всех путях выполнения
-DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl initOneLinkList(struct OneLinkList *)" (?initOneLinkList@@YAXPAUOneLinkList@@@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
-DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl pushOneLinkStack(struct OneLinkList *,char)" (?pushOneLinkStack@@YAHPAUOneLinkList@@D@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
-DZ-10.obj : error LNK2019: ссылка на неразрешенный внешний символ "char __cdecl popOneLinkStack(struct OneLinkList *)" (?popOneLinkStack@@YADPAUOneLinkList@@@Z) в функции "int __cdecl bracesCheck(char *)" (?bracesCheck@@YAHPAD@Z).
-C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\Debug\DZ-10.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
+﻿  geek.c
+C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\DZ-10\geek.c(16,5): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\DZ-10\geek.c(26,5): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Alex\Desktop\Home-works-\Algoritmi\DZ-10(C.)\DZ-10\geek.c(77,5): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

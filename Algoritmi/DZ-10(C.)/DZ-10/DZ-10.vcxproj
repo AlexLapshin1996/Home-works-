@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DZ-10.cpp" />
+    <ClCompile Include="geek.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="geek.h" />
