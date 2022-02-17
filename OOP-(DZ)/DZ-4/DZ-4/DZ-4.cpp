@@ -211,10 +211,16 @@ public:
 class Hand
 {
 private:
+
     vector<Card*> cards;
+
 public:
-    void add(Card *value)
-    {
+
+    Hand()
+    {};
+
+    void add(Card* value)
+    {      
         cards.push_back(value);
     }
 
@@ -223,9 +229,19 @@ public:
         cards.clear();
     }
 
-    int GetValue()
+    void GetValue()
     {
-        return cards.size();
+
+        cout << "Сумма очков с карт равна - " << endl;
+
+        for (auto it = cards.begin(); it<cards.end();it++)
+        {
+            cout << *it << " " << "\t";
+        }
+
+        cout << "\n";
+        cout << "Количество карт в руке:";
+        cout<<cards.size()<<endl;
     }
 
 };
@@ -287,14 +303,7 @@ int main()
     cout << "\n\n";
     cout << "Количество уникальных значений вектора равно : ";
     cout<<arr_un.size();
-    cout << "\n";
+    cout << "\n\n";
     
-    
-
-    Hand a1;
-    a1.add();
-    
-    a1.GetValue();
-
 }
 
