@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(211,24): error C2248: PhoneBook::PhoneBook: невозможно обратиться к private член, объявленному в классе "PhoneBook"
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(100): message : см. объявление "PhoneBook::PhoneBook"
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-1\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(97): message : см. объявление "PhoneBook"
