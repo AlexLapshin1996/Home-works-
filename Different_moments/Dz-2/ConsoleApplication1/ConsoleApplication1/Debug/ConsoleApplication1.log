@@ -1,0 +1,6 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(135): message : выполняется компиляция ссылки на экземпляр шаблон функции "void SortPointers<int>(std::vector<int *,std::allocator<int *>> &)"
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-2\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(68): warning C4715: <lambda_7b507ce815cd4457b6b01510160929d0>::operator(): значение возвращается не при всех путях выполнения
+  ConsoleApplication1.vcxproj -> C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-2\ConsoleApplication1\Debug\ConsoleApplication1.exe
