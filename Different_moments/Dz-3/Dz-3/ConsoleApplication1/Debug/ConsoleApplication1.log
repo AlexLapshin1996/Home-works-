@@ -1,0 +1,8 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-3\Dz-3\ConsoleApplication1\ConsoleApplication1.cpp(23,18): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-3\Dz-3\ConsoleApplication1\ConsoleApplication1.cpp(135): message : выполняется компиляция ссылки на экземпляр шаблон функции "void PushToTheBack<int>(std::list<int,std::allocator<int>> &)"
+  ConsoleApplication1.vcxproj -> C:\Users\Alex\Desktop\Home-works-\Different_moments\Dz-3\Dz-3\Debug\ConsoleApplication1.exe
