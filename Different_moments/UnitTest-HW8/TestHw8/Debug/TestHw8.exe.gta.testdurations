@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\Alex\Desktop\Home-works-\Different_moments\UnitTest-HW8\TestHw8\Debug\TestHw8.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="class_PhoneBook.OutFile" Duration="1" />
+    <TestDuration Test="class_PhoneBook.GetNumber" Duration="1" />
+    <TestDuration Test="class_PhoneBook.ChangePhoneNumber" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
